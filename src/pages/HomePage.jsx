@@ -1,7 +1,15 @@
+import axios from "axios";
 import Card from "../../components/Card";
 import Navbar from "../../components/Navbar";
+import { useEffect } from "react";
 
-function Home() {
+function HomePage() {
+  const fetchBooks = async () => {
+    const response = await axios.get("http://localhost:3000/api/books");
+  };
+  useEffect(() => {
+    fetchBooks();
+  }, []);
   return (
     <>
       <Navbar />
@@ -12,8 +20,9 @@ function Home() {
         <Card />
         <Card />
         <Card />
+        <Card />
       </div>
     </>
   );
 }
-export default Home;
+export default HomePage;
