@@ -5,7 +5,6 @@ function EditPage() {
   return (
     <>
       <Navbar />
-      <Card />
     </>
   );
 }

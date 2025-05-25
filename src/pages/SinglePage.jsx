@@ -1,4 +1,4 @@
-import { useNavigate, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import Navbar from "../../components/Navbar";
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -21,6 +21,7 @@ function SinglePage() {
     );
     if (response.status === 200) {
       // home page ma navigation
+      alert("deleted successfully");
       navigate("/");
     } else {
       alert("Something went wrong");
@@ -39,9 +40,12 @@ function SinglePage() {
       >
         Delete
       </button>
-      <button className="border-2 border-black-500 bg-red-100 text-red-600 px-4 py-2 rounded hover:bg-red-200">
-        Edit
-      </button>
+
+      <Link to="/edit-page">
+        <button className="border-2 border-black-500 bg-red-100 text-red-600 px-4 py-2 rounded hover:bg-red-200">
+          Edit
+        </button>
+      </Link>
     </>
   );
 }
