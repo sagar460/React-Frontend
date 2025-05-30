@@ -41,7 +41,7 @@ function SinglePage() {
         Delete
       </button>
 
-      <Link to="/edit-page">
+      <Link to={`/edit-page/${book.id}`}>
         <button className="border-2 border-black-500 bg-red-100 text-red-600 px-4 py-2 rounded hover:bg-red-200">
           Edit
         </button>

@@ -55,7 +55,7 @@ function CreatePage() {
           <h3 className="text-xl font-semibold">Create Book Info</h3>
         </div>
         <div className="p-6 space-y-6">
-          <form onSubmit={submitData}>
+          <form>
             <div className="grid grid-cols-6 gap-6">
               <div className="col-span-6 sm:col-span-3">
                 <label
