@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 function HomePage() {
   const [books, setBooks] = useState([]);
   const fetchBooks = async () => {
-    const response = await axios.get("http://localhost:3000/api/books");
+    const response = await axios.get("http://localhost:3000/api/books"); //API call
     setBooks(response.data.data);
   };
   useEffect(() => {

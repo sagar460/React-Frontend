@@ -1,6 +1,6 @@
 function Form({ type }) {
   return (
-    <div className="bg-white border border-4 rounded-lg shadow relative m-10">
+    <div className="bg-white border-4 rounded-lg shadow relative m-10">
       <div className="flex items-start justify-between p-5 border-b rounded-t">
         <h3 className="text-xl font-semibold">
           {type == "create-page" ? "Create" : "Edit"} Book
@@ -73,7 +73,7 @@ function Form({ type }) {
                 name="bookAuthor"
                 id="brand"
                 className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-cyan-600 focus:border-cyan-600 block w-full p-2.5"
-                placeholder="Robert T. Kiyosaki"
+                placeholder="Robert"
                 required
               />
             </div>

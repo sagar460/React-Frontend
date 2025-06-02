@@ -22,7 +22,7 @@ function EditPage() {
       [name]: value,
     });
   };
-  console.log(book, "These are books");
+  // console.log(book, "These are books");
   const editBook = async (event) => {
     event.preventDefault();
     const response = await axios.patch(
