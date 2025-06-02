@@ -32,7 +32,7 @@ function SinglePage() {
     <>
       <Navbar />
       <h1>{book.bookName}</h1>
-      <p>{book.price}</p>
+      <p>{book.bookPrice}</p>
       <p>{book.bookGenre}</p>
       <p>{book.bookAuthor}</p>
       <button
